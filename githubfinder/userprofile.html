@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GitHub Profile</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/userprofile.css">
+    </head>
+    <body>
+      <main class="profile-card">
+        <div class="profile-picture"></div>
+        <div class="username"></div>
+        <div class="public-repos"></div>
+        <div class="location"></div>
+        <div class="bio"></div>
+        <div class="html-url"></div>
+        
+        <div class="icon-container">
+          <div class="stat-box">
+            <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+            </svg>
+            <a class="stat" href="stat.html">Stats</a>
+          </div>
+          
+          <div class="repos-box">
+            <svg class="icon" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <a class="repos" href="repos.html">Repos</a>
+          </div>
+        </div>
+      </main>
+      
+      <script type="module" src="routes/userprofile.js" async defer></script>
+    </body>
+</html>

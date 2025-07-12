@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@media (max-width: 768px) {
+  .bars {
+    font-size: 2vh;
+  }
+  
+  .total-repos {
+    font-size: 2.5vh;
+    margin-left: 1vw;
+  }
+  
+  .visuals {
+    gap: 10px;
+  }
+  
+  .bar-container {
+    flex-wrap: wrap;
+  }
+  
+  .bar-container span {
+    font-size: 0.8em;
+  }
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+position: relative;
+ 
+
+}
+body {
+  position: relative;
+   background: linear-gradient(
+    to bottom,
+    black 0%,
+    #222 20%,
+    #444 40%,
+    #222 60%,
+    black 100%
+  );
+    background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+ min-height: 100vh;
+}
+
+.heading {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  color: white;
+  font-size: 4vh;
+  height: 10vh;
+  font-weight: 600; 
+  top: 4vh;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif; 
+  text-decoration: underline;
+}
+
+
+
+.total-repos{
+position:relative;
+left:5%;
+width:100vw;
+height:6vh;
+font-family: 'Titillium Web', sans-serif; 
+top:100%;
+font-weight: 00;
+margin-top:5vh;
+margin-left: 2vw;;
+font-size: 4vh;
+
+color: white;
+}
+
+.hh{
+  top:5%;
+   font-weight: 600;
+   font-size:4vh;
+   position: relative;
+   left:60%;
+}
+.bars{
+position:absolute;
+left:7.2%;
+font-size:1h;;
+margin-top:5vh;
+font-family: 'Titillium Web', sans-serif;
+color: white;
+font-weight: 500;
+}
+.bars > p
+{
+display: grid;
+grid-template-columns:(auto-fit,minmax(16px,1fr));
+flex-wrap: wrap;
+
+color:white;
+}
+.visuals {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rank-container {
+  margin: 20px 7%;
+    position: relative;  
+  width: 86%;         
+}
+
+
+.rank-card {
+  background: rgba(30, 30, 40, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.rank-score {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #58a6ff;
+  margin: 10px 0;
+}
+
+.rank-tier {
+  font-size: 1.2rem;
+  color: #c9d1d9;
+  margin-bottom: 20px;
+}
+
+.rank-visual {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.rank-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #238636, #3fb950);
+  border-radius: 5px;
+  transition: width 1s ease;
+}
+
+.rank-stars {
+  font-size: 1.8rem;
+  color: #f8d775;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+
+.rank-stats {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rank-score {
+    font-size: 2rem;
+  }
+  .rank-stars {
+    font-size: 1.5rem;
+  }
+}

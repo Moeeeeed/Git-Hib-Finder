@@ -1,0 +1,123 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    black 0%,
+    #222 30%,
+    #444 40%,
+    #222 70%,
+    black 190%
+  );
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  position: relative;
+  width: 40vw;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #6a6464;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 15px 2px rgba(255, 255, 255, 0.3),
+    inset 0 0 15px 2px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-out;
+}
+
+.profile-card > div {
+  color: #f6efef;
+}
+
+.profile-picture {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f6efef;
+}
+
+.pp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon-container {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.stat-box, .repos-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(106, 100, 100, 0.9);
+  padding: 8px 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.stat, .repos {
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #f6efef;
+  transition: color 0.3s ease;
+}
+
+.stat-box:hover, .repos-box:hover {
+  background: rgba(74, 71, 71, 1);
+  transform: translateY(-5px);
+}
+
+.stat-box:hover .icon {
+  transform: scale(1.2);
+  fill: #4dabf7;
+}
+
+.repos-box:hover .icon {
+  transform: scale(1.2);
+  fill: #51cf66;
+}
+
+.stat:hover {
+  color: #4dabf7;
+}
+
+.repos:hover {
+  color: #51cf66;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+}
